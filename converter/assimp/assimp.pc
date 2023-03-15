@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=/usr/local/bin
+libdir=/usr/local/lib
+includedir=/usr/local/include/assimp
+
+Name: assimp2json
+Description: Import various well-known 3D model formats in an uniform manner.
+Version: 3.1.1
+Libs: -L${libdir} -lassimp
+Libs.private: -lstdc++ -lz
+Cflags: -I${includedir}
