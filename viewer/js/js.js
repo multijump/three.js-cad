@@ -27,7 +27,7 @@ $(document).ready (function () {
         loader = new THREE.AssimpJSONLoader ();
         var shading = THREE.SmoothShading;
 
-        loader.load( './objects/models/AC11.json', function ( object ) {
+        loader.load( './viewer/objects/models/AC11.json', function ( object ) {
 
             ifc = object;
             ori_ifc = cloneObject(object);
@@ -70,7 +70,7 @@ $(document).ready (function () {
         window.addEventListener( 'resize', onWindowResize, false );
 
         var tree_nodes = {};
-        $.getJSON("./objects/models/AC11_tree.json", function(json) {
+        $.getJSON("./viewer/objects/models/AC11_tree.json", function(json) {
             $('#tree-renderer').tree({
                 data: [json]
             });
